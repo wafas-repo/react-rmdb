@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 
 //Config
 import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL } from '../config'
@@ -18,7 +18,7 @@ import noImage from '../images/no_image.jpg'
 
 export const Home = () => {
   
-  const { state, loading, error, setSearchTerm, searchTerm, setIsLoadingMore } = useHomeFetch()
+  const { state, loading, setSearchTerm, searchTerm, setIsLoadingMore } = useHomeFetch()
   
   console.log('Home',state);
 
